@@ -1,0 +1,354 @@
+@font-face {
+    font-family: 'Maven Pro';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Maven Pro Regular'),
+    local('MavenPro-Regular'),
+    url(https://fonts.gstatic.com/s/mavenpro/v10/MG9KbUZFchDs94Tbv9U-pVtXRa8TVwTICgirnJhmVJw.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+@font-face {
+    font-family: 'Maven Pro';
+    font-style: normal;
+    font-weight: 700;
+    src: local('Maven Pro Bold'),
+    local('MavenPro-Bold'),
+    url(https://fonts.gstatic.com/s/mavenpro/v10/uDssvmXgp7Nj3i336k_dSugdm0LZdjqr5-oayXSOefg.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: "Maven Pro", Helvetica, Arial, sans-serif;
+    color: #f7f7f7
+}
+
+.TexasHoldEm-wrapper {
+    background: url('../img/background.png') no-repeat center;
+    background-size: contain;
+    width: 100%;
+    height: 91%;
+}
+
+.TexasHoldEm-ui-wrapper {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    left: 0;
+    right: 0;
+    text-align: center;
+
+}
+.TexasHoldEm-ui-text {
+    font-size: 1.4rem;
+    line-height: 2.9rem;
+}
+.TexasHoldEm-round {
+    font-size: 2.1rem;
+    line-height: 44px;
+}
+
+.TexasHoldEm-table-cards {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: 136px;
+    left: 0;
+    right: 0;
+}
+
+.PlayerView {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 80px;
+    padding-top: 12px;
+}
+.player-wrapper {
+
+}
+.player-content {
+    display: flex;
+}
+.player-name {
+    font-size: 1.8rem;
+    height: 38px;
+}
+.player-avatar {
+    width: 105px;
+    height: 105px;
+}
+.player-hand {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0 20px;
+}
+.player-cards {
+    display: flex;
+}
+
+.player-script {
+    text-transform: capitalize;
+    margin: 0 2px;
+    font-size: 1.6rem;
+}
+.player-script.hand-winner {
+    font-weight: bold;
+}
+.player-script.hand-loser {
+    opacity: 0.75;
+}
+.player-info {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.4rem;
+    line-height: 2.9rem;
+    font-weight: bold;
+    margin-top: -6px;
+    text-align: center;
+    width: 100px;
+}
+
+.Chips {
+    position: absolute;
+    top: 40%;
+    width: 100%;
+}
+.Chips-table {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.Chips-player {
+    position: absolute;
+}
+.Chips-count {
+    position: relative;
+    line-height: 2rem;
+    font-size: 1.6rem;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.Chips-stack {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.chip-stack {
+    position: relative;
+    width: 28px;
+    height: 50px;
+    margin: 0 3px;
+}
+.chip {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+}
+
+.TexasHoldEm-overlay {
+    position: absolute;
+    font-size: 2.8rem;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 55%;
+}
+
+.player--player0 .player-content {
+    flex-direction: row;
+}
+.player--player1 .player-content {
+    flex-direction: row-reverse;
+}
+.player--player0 .player-name {
+    text-align: left;
+}
+.player--player1 .player-name {
+    text-align: right;
+}
+.player--player0 .player-hand {
+    align-items: flex-start;
+}
+.player--player1 .player-hand {
+    align-items: flex-end;
+}
+.player--player0 .player-info {
+    margin-left: 20px;
+}
+.player--player1 .player-info {
+    margin-right: 20px;
+}
+.player--player0.Chips-player {
+    left: 20%;
+}
+.player--player1.Chips-player {
+    right: 20%;
+}
+
+.Card {
+    background: url('../img/cards.png') no-repeat;
+    width: 59px;
+    height: 78px;
+    margin: 0 2px;
+}
+.Card--blank {
+    background-position: 0 -348px;
+}
+.Card--As {
+    background-position: 0 0;
+}
+.Card--2s {
+    background-position: -64px 0;
+}
+.Card--3s {
+    background-position: -128px 0;
+}
+.Card--4s {
+    background-position: -192px 0;
+}
+.Card--5s {
+    background-position: -256px 0;
+}
+.Card--6s {
+    background-position: -320px 0;
+}
+.Card--7s {
+    background-position: -384px 0;
+}
+.Card--8s {
+    background-position: -448px 0;
+}
+.Card--9s {
+    background-position: -512px 0;
+}
+.Card--Ts {
+    background-position: -576px 0;
+}
+.Card--Js {
+    background-position: -640px 0;
+}
+.Card--Qs {
+    background-position: -704px 0;
+}
+.Card--Ks {
+    background-position: -768px 0;
+}
+.Card--Ac {
+    background-position: 0 -87px;
+}
+.Card--2c {
+    background-position: -64px -87px;
+}
+.Card--3c {
+    background-position: -128px -87px;
+}
+.Card--4c {
+    background-position: -192px -87px;
+}
+.Card--5c {
+    background-position: -256px -87px;
+}
+.Card--6c {
+    background-position: -320px -87px;
+}
+.Card--7c {
+    background-position: -384px -87px;
+}
+.Card--8c {
+    background-position: -448px -87px;
+}
+.Card--9c {
+    background-position: -512px -87px;
+}
+.Card--Tc {
+    background-position: -576px -87px;
+}
+.Card--Jc {
+    background-position: -640px -87px;
+}
+.Card--Qc {
+    background-position: -704px -87px;
+}
+.Card--Kc {
+    background-position: -768px -87px;
+}
+.Card--Ah {
+    background-position: 0 -174px;
+}
+.Card--2h {
+    background-position: -64px -174px;
+}
+.Card--3h {
+    background-position: -128px -174px;
+}
+.Card--4h {
+    background-position: -192px -174px;
+}
+.Card--5h {
+    background-position: -256px -174px;
+}
+.Card--6h {
+    background-position: -320px -174px;
+}
+.Card--7h {
+    background-position: -384px -174px;
+}
+.Card--8h {
+    background-position: -448px -174px;
+}
+.Card--9h {
+    background-position: -512px -174px;
+}
+.Card--Th {
+    background-position: -576px -174px;
+}
+.Card--Jh {
+    background-position: -640px -174px;
+}
+.Card--Qh {
+    background-position: -704px -174px;
+}
+.Card--Kh {
+    background-position: -768px -174px;
+}
+.Card--Ad {
+    background-position: 0 -261px;
+}
+.Card--2d {
+    background-position: -64px -261px;
+}
+.Card--3d {
+    background-position: -128px -261px;
+}
+.Card--4d {
+    background-position: -192px -261px;
+}
+.Card--5d {
+    background-position: -256px -261px;
+}
+.Card--6d {
+    background-position: -320px -261px;
+}
+.Card--7d {
+    background-position: -384px -261px;
+}
+.Card--8d {
+    background-position: -448px -261px;
+}
+.Card--9d {
+    background-position: -512px -261px;
+}
+.Card--Td {
+    background-position: -576px -261px;
+}
+.Card--Jd {
+    background-position: -640px -261px;
+}
+.Card--Qd {
+    background-position: -704px -261px;
+}
+.Card--Kd {
+    background-position: -768px -261px;
+}

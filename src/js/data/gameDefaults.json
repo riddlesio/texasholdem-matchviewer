@@ -1,0 +1,28 @@
+{
+  "canvas": {
+    "width": 960,
+    "height": 540
+  },
+  "chips": [{
+    "image": "chip_black_small.png",
+    "value": 10000
+  },{
+    "image": "chip_orange_small.png",
+    "value": 2000
+  },{
+    "image": "chip_purple_small.png",
+    "value": 500
+  },{
+    "image": "chip_blue_small.png",
+    "value": 100
+  },{
+    "image": "chip_green_small.png",
+    "value": 20
+  },{
+    "image": "chip_red_small.png",
+    "value": 5
+  },{
+    "image": "chip_white_small.png",
+    "value": 1
+  }]
+}
