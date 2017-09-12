@@ -40,12 +40,12 @@ html {
 
 }
 .TexasHoldEm-ui-text {
-    font-size: 1.4rem;
+    font-size: 1.5rem;
     line-height: 2.9rem;
 }
 .TexasHoldEm-round {
-    font-size: 2.1rem;
-    line-height: 44px;
+    font-size: 2.4rem;
+    line-height: 47px;
 }
 
 .TexasHoldEm-table-cards {
@@ -63,19 +63,16 @@ html {
     margin: 0 8.3%;
     padding-top: 12px;
 }
-.player-wrapper {
-
-}
 .player-content {
     display: flex;
 }
 .player-name {
-    font-size: 1.8rem;
-    height: 38px;
+    font-size: 2.1rem;
+    height: 41px;
 }
 .player-avatar {
-    width: 105px;
-    height: 105px;
+    width: 120px;
+    height: 120px;
 }
 .player-hand {
     display: flex;
@@ -90,7 +87,7 @@ html {
 .player-script {
     text-transform: capitalize;
     margin: 0 2px;
-    font-size: 1.6rem;
+    font-size: 1.9rem;
 }
 .player-script.hand-winner {
     font-weight: bold;
@@ -101,7 +98,7 @@ html {
 .player-info {
     display: flex;
     flex-direction: column;
-    font-size: 1.4rem;
+    font-size: 1.5rem;
     line-height: 2.9rem;
     font-weight: bold;
     margin-top: -6px;
@@ -125,7 +122,7 @@ html {
 .Chips-count {
     position: relative;
     line-height: 2rem;
-    font-size: 1.6rem;
+    font-size: 1.7rem;
     text-align: center;
     margin-bottom: 10px;
 }
