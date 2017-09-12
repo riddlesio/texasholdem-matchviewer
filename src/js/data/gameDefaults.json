@@ -4,25 +4,25 @@
     "height": 540
   },
   "chips": [{
-    "image": "chip_black_small.png",
+    "color": "black",
     "value": 10000
   },{
-    "image": "chip_orange_small.png",
+    "color": "orange",
     "value": 2000
   },{
-    "image": "chip_purple_small.png",
+    "color": "purple",
     "value": 500
   },{
-    "image": "chip_blue_small.png",
+    "color": "blue",
     "value": 100
   },{
-    "image": "chip_green_small.png",
+    "color": "green",
     "value": 20
   },{
-    "image": "chip_red_small.png",
+    "color": "red",
     "value": 5
   },{
-    "image": "chip_white_small.png",
+    "color": "white",
     "value": 1
   }]
 }

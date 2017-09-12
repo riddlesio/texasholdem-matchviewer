@@ -142,10 +142,31 @@ html {
     height: 50px;
     margin: 0 3px;
 }
-.chip {
+.Chip {
     position: absolute;
     width: 30px;
     height: 30px;
+}
+.Chip--black {
+    background: url('../img/chip_black_small.png') no-repeat;
+}
+.Chip--blue {
+    background: url('../img/chip_blue_small.png') no-repeat;
+}
+.Chip--green {
+    background: url('../img/chip_green_small.png') no-repeat;
+}
+.Chip--orange {
+    background: url('../img/chip_orange_small.png') no-repeat;
+}
+.Chip--purple {
+    background: url('../img/chip_purple_small.png') no-repeat;
+}
+.Chip--red {
+    background: url('../img/chip_red_small.png') no-repeat;
+}
+.Chip--white {
+    background: url('../img/chip_white_small.png') no-repeat;
 }
 
 .TexasHoldEm-overlay {

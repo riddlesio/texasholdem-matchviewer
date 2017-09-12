@@ -3,7 +3,7 @@ import createView from 'omniscient';
 import RandomSeed from 'random-seed';
 
 function getChipRenderer(random) {
-    return function renderChip(image, index) {
+    return function renderChip(color, index) {
 
         let top = (4 - index) * 5;
 
@@ -20,10 +20,9 @@ function getChipRenderer(random) {
             left: `${randomShift}px`,
         };
 
-        return <img
+        return <div
             key={ `chip-${index}` }
-            className="chip"
-            src={ `../img/${image}` }
+            className={ `Chip Chip--${color}` }
             style={ style }
         />;
     };
@@ -36,13 +35,13 @@ function getColumnRenderer(random) {
 
         if (amount <= 0) return null;
 
-        const images = [];
+        const colors = [];
         for (let i = 0; i < amount; i++) {
-            images[i] = chipType.image;
+            colors[i] = chipType.color;
         }
 
         return <div key={`column-${index}`} className="chip-stack">
-            { images.map(getChipRenderer(random)) }
+            { colors.map(getChipRenderer(random)) }
         </div>;
     };
 }
