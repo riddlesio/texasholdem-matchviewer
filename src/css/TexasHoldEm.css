@@ -75,6 +75,7 @@ html {
     height: 120px;
 }
 .player-hand {
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -85,11 +86,12 @@ html {
 }
 
 .player-script {
+    position: absolute;
     text-transform: capitalize;
     margin: 0 2px;
     font-size: 1.9rem;
-    width: 0;
     white-space: nowrap;
+    bottom: 0;
 }
 .player-script.hand-winner {
     font-weight: bold;
@@ -188,11 +190,11 @@ html {
 .player--player1 .player-name {
     text-align: right;
 }
-.player--player0 .player-hand {
-    align-items: flex-start;
+.player--player0 .player-script {
+    left: 0;
 }
-.player--player1 .player-hand {
-    align-items: flex-end;
+.player--player1 .player-script {
+    right: 0;
 }
 .player--player0 .player-info {
     margin-left: 20px;
