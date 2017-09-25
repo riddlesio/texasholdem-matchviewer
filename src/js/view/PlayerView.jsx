@@ -45,7 +45,7 @@ function getHandValueName(handValue) {
 function getPlayerRenderer(winningOdds) {
     return function renderPlayer(player, index) {
 
-        const { chips, odds, bet, hand, id, move } = player;
+        const { chips, odds, bet, hand, id, move, failedInput } = player;
         const defaultHref = encodeURIComponent(
             'https://storage.googleapis.com/riddles-images/riddles-avatar-solo-113.png');
         const playerClass = `player--player${id}`;
@@ -60,6 +60,11 @@ function getPlayerRenderer(winningOdds) {
         if (handValue !== '') {
             handValueWinnerClass = odds === winningOdds ? 'hand-winner' : 'hand-loser';
             playerScript = handValue;
+        }
+
+        if (failedInput) {
+            handValueWinnerClass = 'hand-loser';
+            playerScript = 'Disqualified: Invalid input';
         }
 
         return <div

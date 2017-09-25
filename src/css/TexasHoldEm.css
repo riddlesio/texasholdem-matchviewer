@@ -88,6 +88,8 @@ html {
     text-transform: capitalize;
     margin: 0 2px;
     font-size: 1.9rem;
+    width: 0;
+    white-space: nowrap;
 }
 .player-script.hand-winner {
     font-weight: bold;
