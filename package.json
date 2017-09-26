@@ -44,7 +44,7 @@
     "mocha": "^2.5.3",
     "postcss-custom-properties": "^5.0.1",
     "preprocess-loader": "^0.2.0",
-    "protractor": "^3.3.0",
+    "protractor": "^4.0.11s",
     "react-addons-perf": "^15.3.2",
     "selenium-webdriver": "^2.53.2",
     "webpack": "^1.13.1",

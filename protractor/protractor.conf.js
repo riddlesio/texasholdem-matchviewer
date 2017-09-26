@@ -6,7 +6,7 @@ exports.config = {
     multiCapabilities: desktopCapabilities,
     seleniumAddress: 'http://hub-cloud.browserstack.com/wd/hub',
     // seleniumAddress: 'http://localhost:4444/wd/hub',
-    maxSessions: 1,
+    maxSessions: 2,
     specs: ['./tests/index-spec.js'],
     baseUrl: 'http://localhost:8686/',
     framework: 'mocha',
